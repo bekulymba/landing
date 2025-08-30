@@ -1,0 +1,112 @@
+/* FAQ Section */
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 878px;
+  background: var(--bg-secondary);
+  transition: var(--transition);
+}
+
+.faq__container,
+.faq__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  width: 100%;
+  max-width: var(--container);
+  padding: 0 var(--space-xl);
+}
+
+.faq__title {
+  font-weight: var(--fw-semibold);
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.012em;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.faq__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 768px;
+  padding: var(--space-lg);
+}
+
+.faq__item {
+  width: 100%;
+  border-top: 1px solid var(--border-light);
+  padding: var(--space-lg) 0;
+  transition: var(--transition);
+}
+
+.faq__item:first-child {
+  border-top: none;
+}
+
+.faq__question {
+  letter-spacing: 0.005em;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+  font-size: 18px;
+  line-height: 28px;
+  transition: var(--transition);
+}
+
+.faq__answer {
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+  margin-top: var(--space-md);
+  transition: var(--transition);
+}
+
+.faq__item:first-child .faq__answer {
+  display: block;
+}
+
+.faq__question-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  padding: var(--space-sm);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.faq__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: var(--transition);
+}
+
+.faq__icon img {
+  width: 100%;
+  height: auto;
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .faq__icon img {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(96%) saturate(1618%) hue-rotate(245deg) brightness(110%) contrast(87%);
+}

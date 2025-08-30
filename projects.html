@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/var.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/testimonial.css">
+  <link rel="stylesheet" href="css/blog-projects.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle">
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="logo"><img src="images/header/req.png" alt="Logo"> <span>Applet</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#contact">Contacts</a>
+          </li>
+          <li><label for="theme-toggle" class="theme-btn"><img src="images/header/sun.png" alt="Light" class="icon-light"> <img src="images/header/moon.png" alt="Dark" class="icon-dark"></label></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="projects">
+      <div class="projects__container">
+        <div class="projects__header">
+          <span class="projects__subtitle">Latest projects</span>
+          <h2 class="projects__title">Innovations we’re proud of</h2>
+          <p class="projects__description">Explore our portfolio of innovative, tailored solutions delivering exceptional<br>
+          results for our clients.</p>
+        </div>
+        <div class="projects__tabs">
+          <div class="projects__tab active" data-filter="all">
+            View all
+          </div>
+          <div class="projects__tab" data-filter="web">
+            Websites
+          </div>
+          <div class="projects__tab" data-filter="mobile">
+            Applications
+          </div>
+          <div class="projects__tab-indicator"></div>
+        </div>
+        <div class="projects__content">
+          <article class="projects__card">
+            <img src="images/projects/slova.jpg" alt="urban" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Website</p>
+              <h3 class="projects__card-title">Urban Ride Hub</h3>
+              <p class="projects__card-desc">Created a bike rental site with real-time availability, routes, and membership management.</p>
+              <div class="projects__meta">
+                <span>3 weeks</span> <span>|</span> <span>Angular</span> <span>|</span> <span>Google Maps API</span>
+              </div>
+              <div class="projects__data">
+                <span>20 Apr 2022</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/gameroom.jpg" alt="potniemujchinityagayutjezo" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Website</p>
+              <h3 class="projects__card-title">Fitness Community</h3>
+              <p class="projects__card-desc">Built a vibrant site for fitness enthusiasts with blog integration and workout plans.</p>
+              <div class="projects__meta">
+                <span>5 weeks</span> <span>|</span> <span>Djanjo</span> <span>|</span> <span>Member Login</span>
+              </div>
+              <div class="projects__data">
+                <span>30 May 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/list.jpg" alt="comerce" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Website</p>
+              <h3 class="projects__card-title">E-commerce Revolution</h3>
+              <p class="projects__card-desc">E-commerce Revolution: Built a dynamic store with seamless payments and recommendations.</p>
+              <div class="projects__meta">
+                <span>6 weeks</span> <span>|</span> <span>Next.js</span> <span>|</span> <span>Stripe API</span>
+              </div>
+              <div class="projects__data">
+                <span>18 Jan 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/amulet.jpg" alt="noutbuk" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Application</p>
+              <h3 class="projects__card-title">EventPlanner Pro</h3>
+              <p class="projects__card-desc">Built an event app with RSVP tracking, calendar integration, and guest list management.</p>
+              <div class="projects__meta">
+                <span>5 months</span> <span>|</span> <span>Flutter</span> <span>|</span> <span>Google Calerndar API</span>
+              </div>
+              <div class="projects__data">
+                <span>17 Jan 2023</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/muted.jpg" alt="misterbiznes" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Website</p>
+              <h3 class="projects__card-title">Corporate Branding</h3>
+              <p class="projects__card-desc">Built a professional corporate site with customized branding and real-time updates.</p>
+              <div class="projects__meta">
+                <span>5 weeks</span> <span>|</span> <span>WordPress</span> <span>|</span> <span>Multilingual Support</span>
+              </div>
+              <div class="projects__data">
+                <span>16 Aug 2022</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/we.jpg" alt="edulearn" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Application</p>
+              <h3 class="projects__card-title">EduLearn</h3>
+              <p class="projects__card-desc">Designed an e-learning platform featuring video lessons, quizzes, and progress tracking.</p>
+              <div class="projects__meta">
+                <span>8 months</span> <span>|</span> <span>React Native</span> <span>|</span> <span>AWS</span>
+              </div>
+              <div class="projects__data">
+                <span>15 Jan 2025</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/ff.jpg" alt="virtualreality" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Website</p>
+              <h3 class="projects__card-title">Tech Startup Site</h3>
+              <p class="projects__card-desc">Designed a modern and fast-loading website to highlight a new tech startup’s services.</p>
+              <div class="projects__meta">
+                <span>4 weeks</span> <span>|</span> <span>Next.js</span> <span>|</span> <span>SEO Optimization</span>
+              </div>
+              <div class="projects__data">
+                <span>14 Jan 2025</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/troll.jpg" alt="chashka" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Application</p>
+              <h3 class="projects__card-title">Portfolio Perfection</h3>
+              <p class="projects__card-desc">Designed a stylish, modern portfolio to highlight creative work with elegance and efficiency.</p>
+              <div class="projects__meta">
+                <span>2 months</span> <span>|</span> <span>Next.js</span> <span>|</span> <span>Tailwind CSS</span> <span>|</span> <span>GSAP</span>
+              </div>
+              <div class="projects__data">
+                <span>10 Jan 2023</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="images/projects/mertv.jpg" alt="lyubov" class="projects__image">
+            <div class="projects__card-content">
+              <p class="projects__topic">Website</p>
+              <h3 class="projects__card-title">Non-Profit Impact</h3>
+              <p class="projects__card-desc">Launched a fundraising website with integrated donation tracking and volunteer coordination.</p>
+              <div class="projects__meta">
+                <span>7 weeks</span> <span>|</span> <span>PHP</span> <span>|</span> <span>Donation Gateway</span>
+              </div>
+              <div class="projects__data">
+                <span>12 Jule 2024</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2025 Applet. All rights reserved.</p>
+      <div class="footer-icons">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="images/footer/X.png" alt="X"></a> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="images/footer/LinkedIn.png" alt="LinkedIn"></a> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/footer/facebook.png" alt="Facebook"></a> <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="images/footer/github.png" alt="GitHub"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

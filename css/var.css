@@ -1,0 +1,78 @@
+/* CSS Variables - Light Theme (Default) */
+:root {
+  /* Colors - Light Theme */
+  --primary: #7F56D9;
+  --primary-hover: #6c47c2;
+  --primary-alt: #6941C6;
+  --primary-light: #9E77ED;
+  --primary-lighter: #E9D7FE;
+  --secondary: #53389E;
+  
+  --text-primary: #181D27;
+  --text-secondary: #535862;
+  --text-muted: #666;
+  
+  --bg-primary: #fff;
+  --bg-secondary: #FAFAFA;
+  --bg-muted: #f0f0f0;
+  
+  --border: #E9EAEB;
+  --border-light: #E5E7EB;
+  --border-medium: #D5D7DA;
+  --border-dark: #ddd;
+  
+  /* Typography */
+  --font: 'Inter', sans-serif;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  
+  /* Shadows */
+  --shadow: 0 1px 2px rgba(10, 13, 18, 0.05), 
+            inset 0 0 0 1px rgba(10, 13, 18, 0.18), 
+            inset 0 -2px 0 rgba(10, 13, 18, 0.05);
+  
+  /* Layout */
+  --container: 1280px;
+  --header-height: 80px;
+  
+  /* Theme transition */
+  --transition: all 0.3s ease;
+}
+
+/* Dark Theme Variables */
+#theme-toggle:checked ~ * {
+  --primary: #9E77ED;
+  --primary-hover: #B692F6;
+  --primary-alt: #A855F7;
+  --primary-light: #C4B5FD;
+  --primary-lighter: #2D1B69;
+  --secondary: #7C3AED;
+  
+  --text-primary: #F9FAFB;
+  --text-secondary: #D1D5DB;
+  --text-muted: #9CA3AF;
+  
+  --bg-primary: #0C0E12;
+  --bg-secondary: #13161B;
+  --bg-muted: #374151;
+  
+  --border: #374151;
+  --border-light: #4B5563;
+  --border-medium: #6B7280;
+  --border-dark: #4B5563;
+  
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 
+            inset 0 0 0 1px rgba(255, 255, 255, 0.1), 
+            inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+}

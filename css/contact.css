@@ -1,0 +1,118 @@
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3xl);
+  background: var(--bg-primary);
+  height: 676px;
+  padding: var(--space-4xl) 0;
+  transition: var(--transition);
+}
+
+.contact__container {
+  max-width: var(--container);
+  width: 100%;
+  padding: 0 var(--space-xl);
+}
+
+.contact__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.contact__title {
+  font-weight: var(--fw-semibold);
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.0122em;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.contact__description {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.contact__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.contact__card {
+  background: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+  width: calc(25% - 18px);
+  min-width: 280px;
+  height: 290px;
+  padding: var(--space-lg);
+  transition: var(--transition);
+}
+
+.contact__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(127, 86, 217, 0.15);
+}
+
+.contact__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-lighter);
+  transition: var(--transition);
+}
+
+.contact__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.contact__text h3 {
+  font-weight: var(--fw-semibold);
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-sm);
+  transition: var(--transition);
+}
+
+.contact__text a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact__text a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.contact__subtitle,
+.contact__text p {
+  font-weight: var(--fw-semibold);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-alt);
+  transition: var(--transition);
+}
+
+.contact__text small {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}

@@ -1,0 +1,78 @@
+/* Base Styles and Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: var(--transition);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+/* Utility classes */
+.active {
+  border-bottom: 2px solid #fff;
+}
+
+.section {
+  margin-top: 60px;
+  padding: 100px 0;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background-color: var(--border);
+  transition: var(--transition);
+  opacity: 20%;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: white;
+}
