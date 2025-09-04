@@ -120,6 +120,40 @@
   gap: 1.5rem;
 }
 
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--bg-secondary); /* фон кнопки */
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+
+  color: var(--text-primary); /* цвет стрелки */
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.scroll-to-top:hover {
+  background: var(--bg-muted);  /* меняем фон при hover */
+  color: var(--primary);        /* стрелка перекрасится если сделать блядское свг */
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Enhanced hover effects for dark theme */
 [data-theme="dark"] .feature:hover,
 [data-theme="dark"] .blog__card:hover,
