@@ -90,13 +90,21 @@
   opacity: 0;
 }
 
-/* Когда чекбокс включён — показываем луну */
-#theme-toggle:checked + .theme-btn .icon-light {
-  opacity: 0;
-}
-#theme-toggle:checked + .theme-btn .icon-dark {
-  opacity: 1;
-}
+/* по умолчанию видно солнце */
+.theme-btn .icon-light {
+   opacity: 1; transition: opacity .2s ease;
+   }
+.theme-btn .icon-dark  {
+   opacity: 0; transition: opacity .2s ease;
+   }
+
+/* когда чекбокс чекнут — показываем луну */
+#theme-toggle:checked ~ .header .theme-btn .icon-light {
+   opacity: 0;
+   }
+#theme-toggle:checked ~ .header .theme-btn .icon-dark  {
+   opacity: 1;
+   }
 
 /* Project Card Component */
 .project-card {
