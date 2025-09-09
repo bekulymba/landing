@@ -41,6 +41,7 @@
   font-size: 24px;
   color: var(--text-primary);
   transition: var(--transition);
+  z-index: 1001;
 }
 
 .logo img {
@@ -49,6 +50,11 @@
 }
 
 /* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -64,6 +70,202 @@
   transition: var(--transition);
 }
 
-.nav__list a:hover {
-  color: var(--primary);
+/* Burger Button - Hidden by default */
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+  position: relative;
 }
+
+.burger-line {
+  width: 24px;
+  height: 3px;
+  background-color: var(--text-secondary);
+  margin: 2px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Burger button animation when active */
+.burger-btn.active .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: var(--primary);
+}
+.burger-btn.active .burger-line:nth-child(2) {
+  opacity: 0;
+}
+.burger-btn.active .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+  background-color: var(--primary);
+}
+
+/* Mobile Navigation Menu */
+.nav-mobile {
+  position: absolute;
+  width: 375px; /* 279px + 96px */
+  height: 408px;
+  left: 0;
+  top: var(--header-height);
+  display: flex;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
+.nav-mobile.open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Общая обёртка: две колонки */
+.nav-mobile .menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/* Левая колонка (тексты) */
+.nav-mobile .menu-left {
+  width: 279px;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+}
+.nav-mobile .menu-link {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding-left: 16px;
+  font-family: var(--font);
+  font-weight: var(--fw-semibold);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.nav-mobile .menu-link.active {
+  background: var(--primary);
+  color: #fff;
+  
+}
+
+/* Правая колонка (иконки соцсетей + тема) */
+.nav-mobile .menu-right {
+  width: 96px;
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-mobile .menu-icon,
+.nav-mobile .theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+
+.nav-mobile .menu-icon img,
+.nav-mobile .theme-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+/* обе иконки темы располагаем точно по центру */
+.nav-mobile .theme-btn .icon-light,
+.nav-mobile .theme-btn .icon-dark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* переключение через класс body.dark */
+body.dark .theme-btn .icon-light { opacity: 0; }
+body.dark .theme-btn .icon-dark  { opacity: 1; }
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ================================
+   HOVER ЭФФЕКТЫ ТОЛЬКО ДЛЯ DESKTOP
+   ================================ */
+@media (hover: hover) and (pointer: fine) {
+  .nav__list a:hover {
+    color: var(--primary);
+  }
+  .nav-mobile .menu-link:hover:not(.active) {
+    background-color: var(--bg-secondary);
+    color: var(--primary);
+  }
+  .nav-mobile .menu-link.active:hover {
+    background: var(--primary-hover);
+  }
+  .nav-mobile .theme-btn:hover {
+    background-color: var(--bg-secondary);
+  }
+}
+
+/* ================================
+   УБИРАЕМ HOVER НА МОБИЛЬНЫХ
+   ================================ */
+@media (hover: none) and (pointer: coarse) {
+  .nav-mobile .menu-link,
+  .nav-mobile .theme-btn,
+  .burger-btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-mobile .menu-link:focus:not(:focus-visible),
+  .nav-mobile .theme-btn:focus:not(:focus-visible),
+  .burger-btn:focus:not(:focus-visible) {
+    outline: none;
+  }
+  .nav-mobile .menu-link:active:not(.active) {
+    background-color: transparent;
+    color: var(--text-secondary);
+  }
+  .nav-mobile .theme-btn:active {
+    background-color: transparent;
+  }
+}
+
+
+
+

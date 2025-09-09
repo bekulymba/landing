@@ -76,3 +76,107 @@ h1, h2 {
   background: var(--primary);
   color: white;
 }
+
+/* ================================
+   HOVER ЭФФЕКТЫ ДЛЯ DESKTOP ТОЛЬКО
+   ================================ */
+
+/* Применяем hover эффекты только на устройствах с поддержкой hover */
+@media (hover: hover) and (pointer: fine) {
+  /* Кнопки */
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--primary);
+    color: var(--bg-primary);
+  }
+  
+  .btn-proj:hover {
+    background-color: var(--primary);
+    color: var(--bg-primary);
+  }
+  
+  /* Навигация */
+  .nav__list a:hover {
+    color: var(--primary);
+  }
+  
+  /* Карточки */
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog__card:hover,
+  .projects__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* FAQ */
+  .faq__item:hover {
+    background-color: var(--bg-secondary);
+  }
+  
+  /* Контакты */
+  .contact__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Социальные иконки */
+  .footer-icons a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+  }
+  
+  /* Табы проектов */
+  .projects__tab:hover:not(.projects__tab--active) {
+    background-color: var(--primary);
+    color: var(--bg-primary);
+  }
+  
+  /* Theme toggle */
+  .theme-toggle:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Scrollbar hover уже есть выше, но для порядка */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+}
+
+/* ================================
+   УБИРАЕМ HOVER НА МОБИЛЬНЫХ
+   ================================ */
+
+/* Убираем нежелательные эффекты на touch устройствах */
+@media (hover: none) and (pointer: coarse) {
+  /* Убираем tap highlight */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Убираем focus outline для touch, но оставляем для keyboard */
+  button:focus:not(:focus-visible),
+  a:focus:not(:focus-visible),
+  input:focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  /* Убираем sticky hover состояния после tap */
+  .btn:active {
+    transform: none;
+  }
+  
+  .feature:active,
+  .blog__card:active,
+  .projects__card:active,
+  .contact__card:active {
+    transform: none;
+  }
+}
