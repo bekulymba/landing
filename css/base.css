@@ -27,7 +27,7 @@ body {
 
 /* Utility classes */
 .active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--bg-primary);
 }
 
 .section {
@@ -69,17 +69,13 @@ h1, h2 {
 /* Selection styling */
 ::selection {
   background: var(--primary);
-  color: white;
+  color: var(--bg-primary)
 }
 
 ::-moz-selection {
   background: var(--primary);
-  color: white;
+  color: var(--bg-primary);
 }
-
-/* ================================
-   HOVER ЭФФЕКТЫ ДЛЯ DESKTOP ТОЛЬКО
-   ================================ */
 
 /* Применяем hover эффекты только на устройствах с поддержкой hover */
 @media (hover: hover) and (pointer: fine) {

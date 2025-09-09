@@ -459,24 +459,6 @@ html, body {
   }
 }
 
-/* Media Queries */
-@media (max-width: 599px) {
-  .nav {
-    display: none;
-  }
-
-  .burger-btn {
-    display: flex;
-  }
-  
-  .header__container {
-    padding: 0 16px;
-  }
-  
-  .logo {
-    font-size: 20px;
-  }
-}
 
 /* Hide mobile menu on desktop */
 @media (min-width: 600px) {

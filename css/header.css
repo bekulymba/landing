@@ -158,7 +158,7 @@
 }
 .nav-mobile .menu-link.active {
   background: var(--primary);
-  color: #fff;
+  color: var(--bg-primary);
   
 }
 
@@ -203,7 +203,7 @@
 }
 
 /* переключение через класс body.dark */
-body.dark .theme-btn .icon-light { opacity: 0; }
+#theme-toggle:checked ~ * .theme-btn .icon-light { opacity: 0; }
 body.dark .theme-btn .icon-dark  { opacity: 1; }
 
 /* Overlay */
