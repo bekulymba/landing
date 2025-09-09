@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/tema.js" defer></script>
   <script src="js/burger.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/projects.js" defer></script>
+
 </head>
 <body>
   <input type="checkbox" id="theme-toggle">
@@ -169,63 +172,25 @@
       </div>
     </section>
     <hr class="section-divider">
-    <section class="blog">
-      <div class="blog__container">
-        <div class="blog__header">
-          <span class="blog__subtitle">Latest projects</span>
-          <h2 class="blog__title">Innovations we’re proud of</h2>
-          <p class="blog__description">Explore our portfolio of innovative, tailored solutions delivering exceptional<br>
-          results for our clients.</p>
-        </div>
-        <div class="blog__content">
-          <article class="blog__card">
-            <img src="images/blog/pause.jpg" alt="commerce" class="blog__image">
-            <div class="blog__card-content">
-              <p class="blog__topic">Website</p>
-              <h3 class="blog__card-title">E-commerce Revolution</h3>
-              <p class="blog__card-desc">E-commerce Revolution: Built a dynamic store with seamless payments and recommendations.</p>
-              <div class="blog__meta">
-                <span>6 weeks</span> <span>|</span> <span>Next.js</span> <span>|</span> <span>Stripe API</span>
-              </div>
-              <div class="blog__data">
-                <span>18 Jan 2024</span>
-              </div>
-            </div>
-          </article>
-          <article class="blog__card">
-            <img src="images/blog/SF.jpg" alt="edulearn" class="blog__image">
-            <div class="blog__card-content">
-              <p class="blog__topic">Application</p>
-              <h3 class="blog__card-title">EduLearn</h3>
-              <p class="blog__card-desc">Designed an e-learning platform featuring video lessons, quizzes, and progress tracking.</p>
-              <div class="blog__meta">
-                <span>8 months</span> <span>|</span> <span>React Native</span> <span>|</span> <span>AWS</span>
-              </div>
-              <div class="blog__data">
-                <span>15 Jan 2025</span>
-              </div>
-            </div>
-          </article>
-          <article class="blog__card">
-            <img src="images/blog/zxc-cat.gif" alt="URban" class="blog__image">
-            <div class="blog__card-content">
-              <p class="blog__topic">Website</p>
-              <h3 class="blog__card-title">Urban Ride Hub</h3>
-              <p class="blog__card-desc">Created a bike rental site with real-time availability, routes, and membership management.</p>
-              <div class="blog__meta">
-                <span>3 weeks</span> <span>|</span> <span>Angular</span> <span>|</span> <span>Google Maps API</span>
-              </div>
-              <div class="blog__data">
-                <span>20 Apr 2022</span>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="blog__actions">
-          <a href="projects.html" class="btn btn-proj">View all projects</a>
-        </div>
-      </div>
-    </section>
+<section class="blog">
+  <div class="blog__container">
+    <div class="blog__header">
+      <span class="blog__subtitle">Latest projects</span>
+      <h2 class="blog__title">Innovations we’re proud of</h2>
+      <p class="blog__description">
+        Explore our portfolio of innovative, tailored solutions delivering exceptional<br>
+        results for our clients.
+      </p>
+    </div>
+
+    <!-- сюда JS вставит 3 карточки -->
+    <div class="blog__content" id="random-projects"></div>
+
+    <div class="blog__actions">
+      <a href="projects.html" class="btn btn-proj">View all projects</a>
+    </div>
+  </div>
+</section>
     <section id="faq" class="faq">
       <div class="faq__container">
         <header class="faq__header">

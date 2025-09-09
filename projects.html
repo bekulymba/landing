@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/tema.js" defer></script>
   <script src="js/burger.js" defer></script>
+  <script src="js/projects.js" defer></script>
+
 </head>
 <body>
   <input type="checkbox" id="theme-toggle">
@@ -94,156 +96,26 @@
   <div class="overlay" id="overlay"></div>
 
   <main>
-    <section class="projects">
-      <div class="projects__container">
-        <div class="projects__header">
-          <span class="projects__subtitle">Latest projects</span>
-          <h2 class="projects__title">Innovations we’re proud of</h2>
-          <p class="projects__description">Explore our portfolio of innovative, tailored solutions delivering exceptional<br>
-          results for our clients.</p>
-        </div>
-        <div class="projects__tabs">
-          <div class="projects__tab active" data-filter="all">
-            View all
-          </div>
-          <div class="projects__tab" data-filter="web">
-            Websites
-          </div>
-          <div class="projects__tab" data-filter="mobile">
-            Applications
-          </div>
-          <div class="projects__tab-indicator"></div>
-        </div>
-        <div class="projects__content">
-          <article class="projects__card">
-            <img src="images/projects/slova.jpg" alt="urban" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Website</p>
-              <h3 class="projects__card-title">Urban Ride Hub</h3>
-              <p class="projects__card-desc">Created a bike rental site with real-time availability, routes, and membership management.</p>
-              <div class="projects__meta">
-                <span>3 weeks</span> <span>|</span> <span>Angular</span> <span>|</span> <span>Google Maps API</span>
-              </div>
-              <div class="projects__data">
-                <span>20 Apr 2022</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/gameroom.jpg" alt="potniemujchinityagayutjezo" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Website</p>
-              <h3 class="projects__card-title">Fitness Community</h3>
-              <p class="projects__card-desc">Built a vibrant site for fitness enthusiasts with blog integration and workout plans.</p>
-              <div class="projects__meta">
-                <span>5 weeks</span> <span>|</span> <span>Djanjo</span> <span>|</span> <span>Member Login</span>
-              </div>
-              <div class="projects__data">
-                <span>30 May 2024</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/list.jpg" alt="comerce" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Website</p>
-              <h3 class="projects__card-title">E-commerce Revolution</h3>
-              <p class="projects__card-desc">E-commerce Revolution: Built a dynamic store with seamless payments and recommendations.</p>
-              <div class="projects__meta">
-                <span>6 weeks</span> <span>|</span> <span>Next.js</span> <span>|</span> <span>Stripe API</span>
-              </div>
-              <div class="projects__data">
-                <span>18 Jan 2024</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/amulet.jpg" alt="noutbuk" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Application</p>
-              <h3 class="projects__card-title">EventPlanner Pro</h3>
-              <p class="projects__card-desc">Built an event app with RSVP tracking, calendar integration, and guest list management.</p>
-              <div class="projects__meta">
-                <span>5 months</span> <span>|</span> <span>Flutter</span> <span>|</span> <span>Google Calerndar API</span>
-              </div>
-              <div class="projects__data">
-                <span>17 Jan 2023</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/muted.jpg" alt="misterbiznes" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Website</p>
-              <h3 class="projects__card-title">Corporate Branding</h3>
-              <p class="projects__card-desc">Built a professional corporate site with customized branding and real-time updates.</p>
-              <div class="projects__meta">
-                <span>5 weeks</span> <span>|</span> <span>WordPress</span> <span>|</span> <span>Multilingual Support</span>
-              </div>
-              <div class="projects__data">
-                <span>16 Aug 2022</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/we.jpg" alt="edulearn" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Application</p>
-              <h3 class="projects__card-title">EduLearn</h3>
-              <p class="projects__card-desc">Designed an e-learning platform featuring video lessons, quizzes, and progress tracking.</p>
-              <div class="projects__meta">
-                <span>8 months</span> <span>|</span> <span>React Native</span> <span>|</span> <span>AWS</span>
-              </div>
-              <div class="projects__data">
-                <span>15 Jan 2025</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/ff.jpg" alt="virtualreality" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Website</p>
-              <h3 class="projects__card-title">Tech Startup Site</h3>
-              <p class="projects__card-desc">Designed a modern and fast-loading website to highlight a new tech startup’s services.</p>
-              <div class="projects__meta">
-                <span>4 weeks</span> <span>|</span> <span>Next.js</span> <span>|</span> <span>SEO Optimization</span>
-              </div>
-              <div class="projects__data">
-                <span>14 Jan 2025</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/troll.jpg" alt="chashka" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Application</p>
-              <h3 class="projects__card-title">Portfolio Perfection</h3>
-              <p class="projects__card-desc">Designed a stylish, modern portfolio to highlight creative work with elegance and efficiency.</p>
-              <div class="projects__meta">
-                <span>2 months</span> <span>|</span> <span>Next.js</span> <span>|</span> <span>Tailwind CSS</span> <span>|</span> <span>GSAP</span>
-              </div>
-              <div class="projects__data">
-                <span>10 Jan 2023</span>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="images/projects/mertv.jpg" alt="lyubov" class="projects__image">
-            <div class="projects__card-content">
-              <p class="projects__topic">Website</p>
-              <h3 class="projects__card-title">Non-Profit Impact</h3>
-              <p class="projects__card-desc">Launched a fundraising website with integrated donation tracking and volunteer coordination.</p>
-              <div class="projects__meta">
-                <span>7 weeks</span> <span>|</span> <span>PHP</span> <span>|</span> <span>Donation Gateway</span>
-              </div>
-              <div class="projects__data">
-                <span>12 Jule 2024</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+   <section class="projects">
+  <div class="projects__container">
+    <div class="projects__header">
+      <span class="projects__subtitle">Our work</span>
+      <h2 class="projects__title">Projects</h2>
+      <p class="projects__description">Browse all projects or filter by type.</p>
+    </div>
+
+    <!-- Табы -->
+    <div class="projects__tabs">
+      <button class="projects__tab active" data-filter="All">All</button>
+      <button class="projects__tab" data-filter="Website">Websites</button>
+      <button class="projects__tab" data-filter="Application">Applications</button>
+      <div class="projects__tab-indicator"></div>
+    </div>
+
+    <!-- Контент с карточками -->
+    <div class="projects__content" id="projects-list"></div>
+  </div>
+</section>
   </main>
   <footer class="footer">
     <div class="container">

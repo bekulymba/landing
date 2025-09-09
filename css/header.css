@@ -224,9 +224,7 @@ body.dark .theme-btn .icon-dark  { opacity: 1; }
   visibility: visible;
 }
 
-/* ================================
-   HOVER ЭФФЕКТЫ ТОЛЬКО ДЛЯ DESKTOP
-   ================================ */
+
 @media (hover: hover) and (pointer: fine) {
   .nav__list a:hover {
     color: var(--primary);
