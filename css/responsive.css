@@ -17,16 +17,35 @@ html, body {
     max-width: 100%;
   }
   
-  /* Header with theme toggle */
+  /* Header with burger menu */
   .header__container {
     padding: 0 16px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     max-width: 100%;
   }
   
   .header__nav {
     gap: 16px;
+  }
+  
+  /* Hide desktop navigation on mobile */
+  .nav {
+    display: none;
+  }
+
+  /* Show burger button on mobile */
+  .burger-btn {
+    display: flex !important;
+  }
+  
+  /* Mobile navigation styles */
+  .nav-mobile {
+    display: flex;
+  }
+  
+  .overlay {
+    display: block;
   }
   
   .theme-toggle {
@@ -58,15 +77,6 @@ html, body {
   
   .logo {
     font-size: 20px;
-  }
-  
-  .nav__list {
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  
-  .nav__list a {
-    font-size: 14px;
   }
   
   /* Hero Section */
@@ -440,10 +450,45 @@ html, body {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
+  
+  /* Prevent menu from being scrollable when open */
+  body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
 }
 
+
+/* Hide mobile menu on desktop */
+@media (min-width: 600px) {
+  .nav-mobile {
+    display: none !important;
+  }
+  
+  .overlay {
+    display: none !important;
+  }
+  
+  .burger-btn {
+    display: none !important;
+  }
+}
 /* Intermediate Screens: 600px - 1439px */
 @media (min-width: 600px) and (max-width: 1439px) {
+  /* Hide mobile menu elements on desktop */
+  .burger-btn {
+    display: none !important;
+  }
+  
+  .nav-mobile {
+    display: none !important;
+  }
+  
+  .overlay {
+    display: none !important;
+  }
+  
   /* Container adjustments for fluid scaling */
   .container {
     width: 90%;
@@ -745,6 +790,19 @@ html, body {
 
 /* Desktop: 1440px and above - Original design maintained */
 @media (min-width: 1440px) {
+  /* Hide mobile menu elements on desktop */
+  .burger-btn {
+    display: none !important;
+  }
+  
+  .nav-mobile {
+    display: none !important;
+  }
+  
+  .overlay {
+    display: none !important;
+  }
+  
   .container {
     max-width: var(--container);
   }
